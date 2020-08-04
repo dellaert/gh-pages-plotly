@@ -1,6 +1,8 @@
 // @flow
 import React from 'react';
-import Plot from 'react-plotly';
+// Currently using hack from https://github.com/plotly/react-plotly.js/blob/master/README.md#loading-from-a-script-tag
+// as I can't make react-plotly play nice with yarn/webpack
+const Plot = createPlotlyComponent(Plotly);
 
 type Props = {};
 
@@ -18,7 +20,7 @@ class Fancy extends React.Component<Props> {
                     },
                     { type: 'bar', x: [1, 2, 3], y: [2, 5, 3] },
                 ]}
-                layout={{ width: 320, height: 240, title: 'A Fancy Plot' }}
+                layout={{ width: 640, height: 480, title: 'A Fancy Plot' }}
             />
         );
     }

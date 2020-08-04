@@ -8,7 +8,6 @@ title: Github Pages + Plotly
 email: dellaert@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   This template shows how to combine Github Pages + Plotly.
-  It is based on a blog post and github repo by Allison Zadrozny.
 url: "https://dellaert.github.io/gh-pages-plotly" # the base hostname & protocol for your site
 twitter_username: fdellaert
 github_username:  dellaert

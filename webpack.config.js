@@ -8,7 +8,7 @@ module.exports = {
   entry: path.resolve(__dirname, 'src', 'entry.jsx'),
   output: {
     // we're going to put the generated file in the assets folder so jekyll will grab it.
-    path: path.resolve(__dirname, 'assets/javascripts'),
+    path: path.resolve(__dirname, 'assets/js'),
     filename: "bundle.js"
   },
   resolve: {
