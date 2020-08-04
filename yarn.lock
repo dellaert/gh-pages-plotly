@@ -9377,6 +9377,11 @@ react-overlays@^4.1.0:
     uncontrollable "^7.0.0"
     warning "^4.0.3"
 
+react-plotly@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-plotly/-/react-plotly-1.0.0.tgz#addff804d47abe4e2abc49ad96f8a038cfe7f498"
+  integrity sha1-rd/4BNR6vk4qvEmtlvigOM/n9Jg=
+
 react-scripts@^3.4.1:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/react-scripts/-/react-scripts-3.4.1.tgz#f551298b5c71985cc491b9acf3c8e8c0ae3ada0a"

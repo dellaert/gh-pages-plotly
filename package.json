@@ -1,28 +1,28 @@
 {
-  "name": "gh-pages-jekyll-react",
+  "name": "gh-pages-plotly",
   "version": "1.0.0",
-  "description": "Integrate React into jekyll site as described by Alli Zadrozny",
+  "description": "Integrate React Plotly into jekyll site",
   "main": "webpack.config.js",
   "scripts": {
     "flow": "flow",
     "start": "jekyll serve",
-    "build": "webpack -p"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dellaert/gh-pages-jekyll-react.git"
+    "url": "git+https://github.com/dellaert/gh-pages-plotly.git"
   },
   "keywords": [
     "jekyll",
-    "webpack",
+    "plotly",
     "react"
   ],
   "author": "Frank Dellaert",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dellaert/gh-pages-jekyll-react/issues"
+    "url": "https://github.com/dellaert/gh-pages-plotly/issues"
   },
-  "homepage": "https://github.com/dellaert/gh-pages-jekyll-react#readme",
+  "homepage": "https://github.com/dellaert/gh-pages-plotly#readme",
   "devDependencies": {
     "@babel/cli": "^7.10.5",
     "@babel/core": "^7.11.0",
@@ -37,11 +37,11 @@
     "react-addons-update": "^15.6.2",
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.1",
-    "webpack-cli": "^3.3.12"
-  },
-  "dependencies": {
+    "webpack-cli": "^3.3.12",
     "bootstrap": "^4.5.0",
     "flow-bin": "^0.130.0",
-    "react-bootstrap": "^1.3.0"
-  }
+    "react-bootstrap": "^1.3.0",
+    "react-plotly": "^1.0.0"
+  },
+  "dependencies": {}
 }

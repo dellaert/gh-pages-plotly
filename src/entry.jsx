@@ -1,9 +1,6 @@
 // @flow
-// import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Component1 from './components/Component1';
-import Component2 from './components/Component2';
+import Fancy from './components/Fancy'
 
-ReactDOM.render(<Component1 />, document.getElementById('component_1'));
-ReactDOM.render(<Component2 />, document.getElementById('component_2'));
+ReactDOM.render(<Fancy />, document.getElementById('fancy'));
