@@ -15,8 +15,7 @@ module.exports = {
     extensions: [".ts", ".tsx", ".js", ".jsx"]
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.(js)$/,
         exclude: /node_modules/,
         use: ['babel-loader']
@@ -35,13 +34,7 @@ module.exports = {
               '@babel/preset-react', {
                 'plugins': ['@babel/plugin-proposal-class-properties']
               }
-            ],
-            // "presets": [
-            //   ["env", {
-            //     "modules": false
-            //   }], "react"
-            // ],
-            "plugins": ["react-hot-loader/babel"]
+            ]
           }
         }
       },
@@ -54,5 +47,5 @@ module.exports = {
   devServer: {
     contentBase: './examples',
     hot: true
-},
+  },
 };

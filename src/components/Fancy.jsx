@@ -1,8 +1,8 @@
 // @flow
 import React from 'react';
-// Currently using hack from https://github.com/plotly/react-plotly.js/blob/master/README.md#loading-from-a-script-tag
-// as I can't make react-plotly play nice with yarn/webpack
-const Plot = createPlotlyComponent(Plotly);
+import createPlotlyComponent from 'react-plotly.js/factory';
+
+const Plot = createPlotlyComponent(window.Plotly);
 
 type Props = {};
 

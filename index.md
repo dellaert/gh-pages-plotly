@@ -62,4 +62,4 @@ Happy building!
 
 ## Acknowledgements
 
-This repo was created by [Frank Dellaert](http://dellaert.github.io/), based on the [GH Pages + jekyll + React template](https://github.com/dellaert/gh-pages-plotly).
+This repo was created by [Frank Dellaert](http://dellaert.github.io/), with help from [Sushmita Warrier](https://twitter.com/SushmitaWarrier) based on the [GH Pages + jekyll + React template](https://github.com/dellaert/gh-pages-plotly).
