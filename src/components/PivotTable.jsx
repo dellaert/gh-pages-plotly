@@ -1,16 +1,14 @@
 // @flow
 import React from 'react';
 import tips from '../tips';
-// import PlotlyRenderers from 'react-plotly';
-// import TableRenderers from 'react-plotly';
+import { sortAs } from 'react-pivottable/Utilities';
+import TableRenderers from 'react-pivottable/TableRenderers';
+import createPlotlyComponent from 'react-plotly.js/factory';
+import createPlotlyRenderers from 'react-pivottable/PlotlyRenderers';
 import PivotTableUI from 'react-pivottable/PivotTableUI';
-import sortAs from 'react-pivottable/Utilities';
 import 'react-pivottable/pivottable.css';
-// const Plot = PlotlyRenderers.createPlotlyComponent(window.Plotly);
 
-// Currently using hack from https://github.com/plotly/react-plotly.js/blob/master/README.md#loading-from-a-script-tag
-// as I can't make react-plotly play nice with yarn/webpack
-const Plot = createPlotlyComponent(Plotly);
+const Plot = createPlotlyComponent(window.Plotly);
 
 type Props = {};
 
@@ -34,7 +32,7 @@ class PivotTableUISmartWrapper extends React.PureComponent<Props, State> {
                 renderers={Object.assign(
                     {},
                     TableRenderers,
-                    PlotlyRenderers.createPlotlyRenderers(Plot)
+                    createPlotlyRenderers(Plot)
                 )}
                 {...this.state.pivotState}
                 onChange={s => this.setState({ pivotState: s })}
@@ -76,7 +74,7 @@ export default class PivotTable extends React.Component<Props2, State2> {
                         'Sunday',
                     ]),
                 },
-                plotlyOptions: { width: 900, height: 500 },
+                plotlyOptions: { width: 640, height: 480 },
                 plotlyConfig: {},
                 tableOptions: {
                     clickCallback: function (e, value, filters, pivotData) {
@@ -95,11 +93,13 @@ export default class PivotTable extends React.Component<Props2, State2> {
 
     render() {
         return (
-            <div className="row">
-                <h2 className="text-center">{this.state.filename}</h2>
-                <br />
+            <div>
+                <div className="row">
+                    <h2 className="text-center">{this.state.filename}</h2>
+                    <br />
 
-                <PivotTableUISmartWrapper {...this.state.pivotState} />
+                    <PivotTableUISmartWrapper {...this.state.pivotState} />
+                </div>
             </div>
         );
     }
