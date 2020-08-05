@@ -38,10 +38,10 @@ ReactDOM.render(<Fancy />, document.getElementById('fancy'));
 
 The `Fancy` component in [src/components/Fancy.jsx](/src/components/Fancy.jsx) is based on the [React Plotly Example](https://plotly.com/javascript/react/). This is currently using [this "official" hack](https://github.com/plotly/react-plotly.js/blob/master/README.md#loading-from-a-script-tag) as I can't make react-plotly play nice with yarn/webpack.
 
-The `PivotTable` components [src/components/PivotTable.jsx](/src/components/PivotTable.jsx) is based on https://react-pivottable.js.org/ .
+The `PivotTable` components [src/components/PivotTable.jsx](/src/components/PivotTable.jsx) is based on [https://react-pivottable.js.org](https://react-pivottable.js.org/) .
 
 ## Development
-To start development based on this, clone this [this GitHub template](https://github.com/dellaert/gh-pages-plotly), check out the gh-pages branch, and edit the .md and .jsx files (in the src folder).
+To start development based on this, clone [this GitHub template](https://github.com/dellaert/gh-pages-plotly), check out the gh-pages branch, and edit the .md and .jsx files (in the src folder).
 
 The package manager used is [yarn](https://yarnpkg.com/), and three scripts are configured in [package.json](package.json) to help you:
  
